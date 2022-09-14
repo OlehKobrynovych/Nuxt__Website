@@ -18,7 +18,6 @@
 <script>
 
 export default {
-  name: 'IndexPage',
 
   data() {
       return {
@@ -35,14 +34,18 @@ export default {
 
 <style>
 
-:root {
+/* :root {
   --bg-color: #ebecf0;
   --color-white: #fff;
   --color-shadow: #babebc;
-}
+} */
 
 .connection-btn {
     position: relative;
+    transition: .3s;
+}
+
+.connection-btn:hover {
 }
 
 .connection-btn__item {
@@ -56,30 +59,34 @@ export default {
     font-size: 18px;
     border-radius: 50%;
     background-color: #ebecf0;
-    background-color: var(--bg-color);
+    background-color: #ebecf0;
     text-align: center;
     cursor: pointer;
     font-weight: bold;
     transition: all 400ms ease-in-out;
 }
 
+.connection-btn__item:hover {
+  scale: 1.08;
+}
+
 .connection-btn__item.connection-btn__item-nav {
   font-size: 22px;
   width: 55px;
   height: 55px;
-  box-shadow: -5px -5px 10px var(--color-white),
-    5px 5px 10px var(--color-shadow);
+  box-shadow: -5px -5px 10px #fff,
+    5px 5px 10px #babebc;
 }
 
 .connection-btn__open .connection-btn__item {
-  box-shadow: -5px -5px 10px var(--color-white),
-    5px 5px 10px var(--color-shadow);
+  box-shadow: -5px -5px 10px #fff,
+    5px 5px 10px #babebc;
 }
 
 .connection-btn__open .connection-btn__item.connection-btn__item-nav {
   transform: rotate(42deg);
-  box-shadow: inset 7px 2px 10px var(--color-shadow),
-    inset -5px -5px 12px var(--color-white);
+  box-shadow: inset 7px 2px 10px #babebc,
+    inset -5px -5px 12px #fff;
 }
 
 .connection-btn__open .connection-btn__item:nth-child(1) {
@@ -97,7 +104,7 @@ export default {
 }
 
 .connection-btn__open .itconnection-btn__itemem:active {
-  box-shadow: inset 1px 1px 2px var(--color-shadow),
-    inset -1px -1px 2px var(--color-white);
+  box-shadow: inset 1px 1px 2px #babebc,
+    inset -1px -1px 2px #fff;
 }
 </style>

@@ -1,7 +1,10 @@
 <template>
     <div class="home-page">
+        <OurServices />
+        <PortfolioSlider />
         <WorkPhase />
         <MoreQuestion />
+        <ContactForm />
         <div class="home-page__connection-btn-wrap">
             <ConnectionBtn />
         </div>
@@ -12,6 +15,9 @@
 import ConnectionBtn from "~/components/ConnectionBtn.vue";
 import MoreQuestion from '../components/MoreQuestion.vue';
 import WorkPhase from '../components/WorkPhase.vue';
+import ContactForm from '../components/ContactForm.vue';
+import PortfolioSlider from '../components/PortfolioSlider.vue';
+import OurServices from '../components/OurServices.vue';
 
 export default {
   name: 'IndexPage',
@@ -26,6 +32,9 @@ export default {
     ConnectionBtn,
     MoreQuestion,
     WorkPhase,
+    ContactForm,
+    PortfolioSlider,
+    OurServices,
    
   },
 }

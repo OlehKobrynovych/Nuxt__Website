@@ -6,8 +6,8 @@
                 <ul class="app-header__menu-wrap">
                     <li><router-link class="app-header__menu-item" to="/">Про нас</router-link></li>
                     <li><router-link class="app-header__menu-item" to="/">Послуги</router-link></li>
-                    <li><router-link class="app-header__menu-item" to="/">Контакти</router-link></li>
-                    <li><router-link class="app-header__menu-item" to="/">Портфоліо</router-link></li>
+                    <li><router-link class="app-header__menu-item" to="#contact">Контакти</router-link></li>
+                    <li><router-link class="app-header__menu-item" to="#portfolio">Портфоліо</router-link></li>
                 </ul>
             </div>
             <MobileMenu @click.native="onOpen" />
