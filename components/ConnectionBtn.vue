@@ -53,7 +53,6 @@ export default {
     font-size: 18px;
     border-radius: 50%;
     background-color: #ebecf0;
-    background-color: #ebecf0;
     text-align: center;
     cursor: pointer;
     font-weight: bold;
