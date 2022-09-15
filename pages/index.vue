@@ -1,5 +1,6 @@
 <template>
     <div class="home-page">
+        <AboutUs />
         <OurServices />
         <PortfolioSlider />
         <WorkPhase />
@@ -18,6 +19,7 @@ import WorkPhase from '../components/WorkPhase.vue';
 import ContactForm from '../components/ContactForm.vue';
 import PortfolioSlider from '../components/PortfolioSlider.vue';
 import OurServices from '../components/OurServices.vue';
+import AboutUs from '../components/AboutUs.vue';
 
 export default {
   name: 'IndexPage',
@@ -35,6 +37,7 @@ export default {
     ContactForm,
     PortfolioSlider,
     OurServices,
+    AboutUs,
    
   },
 }

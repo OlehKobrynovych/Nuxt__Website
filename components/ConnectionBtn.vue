@@ -32,13 +32,7 @@ export default {
 }
 </script>
 
-<style>
-
-/* :root {
-  --bg-color: #ebecf0;
-  --color-white: #fff;
-  --color-shadow: #babebc;
-} */
+<style scoped>
 
 .connection-btn {
     position: relative;

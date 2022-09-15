@@ -5,7 +5,7 @@
             <div class="app-header__menu">
                 <ul class="app-header__menu-wrap">
                     <li><router-link class="app-header__menu-item" to="/">Про нас</router-link></li>
-                    <li><router-link class="app-header__menu-item" to="/">Послуги</router-link></li>
+                    <li><router-link class="app-header__menu-item" to="#services">Послуги</router-link></li>
                     <li><router-link class="app-header__menu-item" to="#contact">Контакти</router-link></li>
                     <li><router-link class="app-header__menu-item" to="#portfolio">Портфоліо</router-link></li>
                 </ul>
@@ -18,10 +18,10 @@
             :class="{'app-header__sidebar-menu--activ': isOpen}"
         >
             <ul>
-                <li><router-link class="app-header__sidebar-menu-linc" to="/">Про нас</router-link></li>
-                <li><router-link class="app-header__sidebar-menu-linc" to="/">Ціни</router-link></li>
-                <li><router-link class="app-header__sidebar-menu-linc" to="/">Контакти</router-link></li>
-                <li><router-link class="app-header__sidebar-menu-linc" to="/">Портфоліо</router-link></li>
+                <li><router-link class="app-header__sidebar-menu-linc" to="/" @click.native="onOpen">Про нас</router-link></li>
+                <li><router-link class="app-header__sidebar-menu-linc" to="#services" @click.native="onOpen">Послуги</router-link></li>
+                <li><router-link class="app-header__sidebar-menu-linc" to="#contact" @click.native="onOpen">Контакти</router-link></li>
+                <li><router-link class="app-header__sidebar-menu-linc" to="#portfolio" @click.native="onOpen">Портфоліо</router-link></li>
             </ul>
         </div>
 

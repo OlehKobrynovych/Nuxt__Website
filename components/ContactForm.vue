@@ -32,7 +32,7 @@
                 <label for="subject">Ваше повідомлення</label>
                 <textarea id="subject" name="subject" placeholder="ВВедіть Ваше повідомлення..." style="height:200px"></textarea>
 
-                <input class="contact-form__submit-btn" type="submit" value="Submit">
+                <input class="contact-form__submit-btn" type="submit" value="Відправити">
             </form>
         </div>
     </div>
@@ -121,6 +121,10 @@ input[type=text], input[type=mail], textarea {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+}
+
+textarea {
+    height: 85px !important;
 }
 
 .contact-form__submit-btn {

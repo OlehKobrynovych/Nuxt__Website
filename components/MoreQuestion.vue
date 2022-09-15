@@ -97,6 +97,10 @@ export default {
   transition: max-height 0.5s ease-out;
 }
 
+.more-question__panel p {
+  padding: 10px 0;
+}
+
 .more-question__panel--active {
   max-height: 500px;
 }
